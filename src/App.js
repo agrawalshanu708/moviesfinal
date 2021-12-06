@@ -3,17 +3,17 @@ import "./styles.css";
 var movies = {
   BOLLYWOOD: [
     {
-      name: "Tanhaji -the unsung warrior",
+      name: "♦ Tanhaji - The unsung warrior ♦️",
       rating: 7.2,
       description:
         "Chhatrapati Shivaji's right-hand man, braveheart Subhedar Tanhaji Malusare, pits his sharp acumen against the brawn of ruthless and hedonistic Mughal chieftain Udaybhan Singh Rathore to recapture Kondhana for the Maratha empire.",
-      genre: "Actiom,Drama",
+      genre: "Action,Drama",
       language: "Hindi",
-      producer: "bushan kumar krishna kumar",
+      producer: "bushan kumar, krishna kumar",
       RunTime: "2h 11m"
     },
     {
-      name: "sanju",
+      name: "♦️ ️sanju ♦️",
       rating: 7.9,
       description:
         "Coming from a family of cinematic legends, East Indian actor Sanjay Dutt reaches dizzying heights of success -- but also battles numerous addictions and other personal demons",
@@ -23,7 +23,7 @@ var movies = {
       RunTime: "2h 35m"
     },
     {
-      name: "Antim",
+      name: "♦️ Antim ♦️",
       rating: 8.0,
       description: "",
       genre: "Action, Crime, Drama",
@@ -34,7 +34,7 @@ var movies = {
   ],
   HOLLYWOOD: [
     {
-      name: " The Wolf of Wall Street ",
+      name: "♦️ The Wolf of Wall Street ♦️",
       rating: 8.3,
       description:
         "In 1987, Jordan Belfort (Leonardo DiCaprio) takes an entry-level job at a Wall Street brokerage firm. By the early 1990s, while still in his 20s, Belfort founds his own firm, Stratton Oakmont. Together with his trusted lieutenant (Jonah Hill) and a merry band of brokers, Belfort makes a huge fortune by defrauding wealthy investors out of millions. However, while Belfort and his cronies partake in a hedonistic brew of sex, drugs and thrills, the SEC and the FBI close in on his empire of excess.",
@@ -45,7 +45,7 @@ var movies = {
       RunTime: "2h 59m"
     },
     {
-      name: " Miracle in Cell No. 7 ",
+      name: "♦️ Miracle in Cell No. 7 ♦️",
       rating: 8.4,
       description:
         "A story of love between a mentally-ill father who was wrongly accused of murder and his six year old daughter.",
@@ -55,7 +55,7 @@ var movies = {
       RunTime: "2h 12m"
     },
     {
-      name: "The pursuit of happiness",
+      name: " ♦️ The pursuit of happiness ♦️",
       rating: 8.0,
       description:
         "Life is a struggle for single father Chris Gardner (Will Smith). Evicted from their apartment, he and his young son (Jaden Christopher Syre Smith) find themselves alone with no place to go. Even though Chris eventually lands a job as an intern at a prestigious brokerage firm, the position pays no money. The pair must live in shelters and endure many hardships, but Chris refuses to give in to despair as he struggles to create a better life for himself and his son.",
@@ -68,7 +68,7 @@ var movies = {
   ],
   TOLLYWOOD: [
     {
-      name: "Ellam Sheriyakum",
+      name: "♦️ Ellam Sheriyakum ♦️",
       rating: 9.3,
       description: "An inter-faith couple decides to elope and get married.",
       genre: "Drama",
@@ -76,7 +76,7 @@ var movies = {
       producer: "Jibu Jacob"
     },
     {
-      name: "Ram Asur",
+      name: "♦️ Ram Asur ♦️",
       rating: 9.2,
       description:
         "A rural politician marries a widow with kids and gains a respectable position. He trusts his stepson more than his own when it comes to political matters; thus upsetting his son beyond limits. Soon, the truth behind his reality comes forth.",
@@ -86,7 +86,7 @@ var movies = {
       RunTime: "2h 32m"
     },
     {
-      name: "Baahubali",
+      name: "♦️ Baahubali ♦️",
       rating: 8.2,
       description:
         "Shiva, the son of Bahubali, begins to search for answers after he learns about his heritage.",
@@ -110,7 +110,9 @@ export default function App() {
   return (
     <div className="App">
       <h1 className="title">Movies categories </h1>
-      <small className="small">explore your favourite zone!!</small>
+      <small style={{ fontSize: "1.5rem" }} className="small">
+        explore your favourite zone!!
+      </small>
       <div style={{ padding: "rem" }}>
         {types.map(function (zone) {
           return (
@@ -128,12 +130,21 @@ export default function App() {
           return (
             <div style={{ paddingTop: "2rem" }}>
               <div style={{ fontSize: "2rem" }}>{item.name}</div>
-              <small>IMDB: {item.rating}</small>
-              <div> Movie description: {item.description}</div>
-              <div> Genre: {item.genre}</div>
-              <div> Official language: {item.language}</div>
-              <div> Producer: {item.producer}</div>
-              <div> Run Time: {item.RunTime}</div>
+              <small style={{ fontSize: "1rem" }}>IMDB ➢ {item.rating}</small>
+              <div style={{ fontSize: "1rem" }}>
+                {" "}
+                Movie description ➢ {item.description}
+              </div>
+              <div style={{ fontSize: "1rem" }}> Genre ➢ {item.genre}</div>
+              <div style={{ fontSize: "1rem" }}>
+                {" "}
+                Official language ➢ {item.language}
+              </div>
+              <div style={{ fontSize: "1rem" }}>
+                {" "}
+                Producer ➢ {item.producer}
+              </div>
+              <div style={{ fontSize: "1rem" }}> Run Time ➢ {item.RunTime}</div>
             </div>
           );
         })}
